@@ -1,0 +1,11 @@
+route:
+  receiver: admin
+receivers:
+- name: admin
+  email_configs:
+  - to: "mail_id"
+    from: "mail_id"
+    smarthost: smtp.gmail.com:587
+    auth_username: username
+    auth_identity: username or mail_id
+    auth_password: 16  digit app password of admin  #go to gmail>>security>>App-password>>select(other)>> type (postfix)>> copy password and paste here
